@@ -32,15 +32,14 @@ public class Dealership {
                 break;
 
             case "b":
-                System.out.println("What is your car valued at?");
+                System.out.println("\nWhat is your car valued at?");
                 int value = scan.nextInt();
-                System.out.println("What is your selling price?");
+                System.out.println("\nWhat is your selling price?");
                 int price = scan.nextInt();
-
                 if (value > price && price < 30000) {
-                    System.out.println("We will buy your car, it's been a pleasure doing business with you");
+                    System.out.println("\nWe will buy your car, it's been a pleasure doing business with you");
                 } else {
-                    System.out.println("Sorry, we're not interested");
+                    System.out.println("\nSorry, we're not interested");
                 }
                 break;
             default:
