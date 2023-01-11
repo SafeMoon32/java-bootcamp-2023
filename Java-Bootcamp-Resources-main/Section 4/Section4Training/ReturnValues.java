@@ -2,17 +2,11 @@ package Section4Training;
 
 public class ReturnValues {
     public static void main(String[] args) {
-        double area1 = calculateArea(2.3, 3.5);
-        double area2 = calculateArea(1.6, 2.4);
-        double area3 = calculateArea(2.3, 3.5);
-
-        calculateArea(-5, 2.3);
+        double area = calculateArea(2.3, 3.5);
+        printArea(2.3, 3.5,1);
 
         String englishExplanation = explainArea("English");
-        String frenchExplanation = explainArea("French");
-        String spanishExplanation = explainArea("Spanish");
-        String italianExplanation = explainArea("Italian");
-
+        System.out.println("englishExplanation");
     }
     public static double calculateArea(double length, double width) {
         if (length < 0 || width < 0) {
@@ -30,6 +24,9 @@ public class ReturnValues {
             case "Spanish": return "area es igual a largo * ancho";
             default: return "Language not available";
         }
+    }
+    public static void printArea(double length, double width, double area){
+        System.out.println("A rectangle with a length of " + length + " and a width of " + width + " has an area of " + area);
     }
 }
 //        English "Area equals length * width"
